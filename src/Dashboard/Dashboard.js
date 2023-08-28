@@ -12,10 +12,10 @@ const Dashboard = () => {
             <div className='toggle'>
                 <div className='logo'>
                     <img src={myImage} alt="My-img" />
-                    <h2>MaZe</h2>
+                    <h2>MaZe <span className='danger'>prog</span></h2>
                 </div>
                 <div className='close' id='close-btn'>
-                    <FaTimes/>
+                    <FaTimes className='material-icons-sharp'/>
                     
                 </div>
             </div>
@@ -23,51 +23,72 @@ const Dashboard = () => {
             <div className='sidebar'>
                 
                     <a href='#'>
-                        <MdDashboard/>
+                        <span className='material-icons-sharp'>
+                            <MdDashboard />
+                        </span>
                         <h3>Dashboard</h3>
                     </a>
 
                     <a href='#'>
-                        <BsFillPersonFill/>
+                        <span className='material-icons-sharp'>
+                        <BsFillPersonFill />
+                        </span>
                         <h3>Users</h3>
                      </a>
 
                     <a href='#'>
-                        <MdOutlineReceiptLong/>
+                        <span className='material-icons-sharp'>
+                        <MdOutlineReceiptLong />
+                        </span>
                         <h3>History</h3>
                     </a>
                     <a href='#' className='active'>
-                        <IoAnalytics/>
+                        <span className='material-icons-sharp'>
+                        <IoAnalytics />
+                        </span>
                         <h3>Analytics</h3>
                     </a>
                     <a href='#'>
-                        <AiOutlineMail/>
+                        <span className='material-icons-sharp'>
+                        <AiOutlineMail />
+                        </span>
                         <h3>Tickets</h3>
+                        <span class="message-count">6</span>
                     </a>
                     <a href='#'>
-                        <MdPlaylistAddCheck/>
+                        <span className='material-icons-sharp'>
+                        <MdPlaylistAddCheck />
+                        </span>
                         <h3>Sale list</h3>
                     </a>
                     <a href='#'>
-                        <MdReport/>
+                        <span className='material-icons-sharp'>
+                        <MdReport />
+                        </span>
                         <h3>Reports</h3>
                     </a>
                     <a href='#'>
-                        <AiFillSetting/>
+                        <span className='material-icons-sharp'>                    
+                        <AiFillSetting />
+                        </span>
                         <h3>Settings</h3>
                     </a>
                     <a href='#'>
-                        <AiOutlineUserAdd/>
+                        <span className='material-icons-sharp'>
+                        <AiOutlineUserAdd />
+                        </span>
                         <h3>New Login</h3>
                     </a>
                     <a href='#'>
-                        <MdLogout/>
+                        <span className='material-icons-sharp'>
+                         <MdLogout />
+                        </span>
                         <h3>Logout</h3>
                     </a>
             </div>
             
         </aside>
-        
+
     </div> 
   );
 }
