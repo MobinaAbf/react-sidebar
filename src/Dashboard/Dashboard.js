@@ -1,5 +1,5 @@
 import './Dashboard.css';
-import myImage from './maze-logo-removebg-preview.png'; 
+import myImage from './maze-logo_1_-removebg-preview.png'; 
 import {FaTimes} from "react-icons/fa";
 import {MdDashboard ,MdOutlineReceiptLong,MdPlaylistAddCheck,MdReport,MdLogout} from 'react-icons/md';
 import {BsFillPersonFill} from 'react-icons/bs'
@@ -12,14 +12,16 @@ const Dashboard = () => {
             <div className='toggle'>
                 <div className='logo'>
                     <img src={myImage} alt="My-img" />
-                    <h2>MaZe <span className='danger'>prog</span></h2>
+                    <h2> <span className='danger'>prog</span></h2>
                 </div>
                 <div className='close' id='close-btn'>
                     <FaTimes className='material-icons-sharp'/>
                     
                 </div>
             </div>
+            
 
+                            {/* sidebar */}
             <div className='sidebar'>
                 
                     <a href='#'>
@@ -88,6 +90,27 @@ const Dashboard = () => {
             </div>
             
         </aside>
+
+                     {/* sidebar */}
+
+         <main>
+            <h1>Analytics</h1>
+            <div className='analyse'>
+                <div className='sales'>
+                    <div className='status'>
+                        <div className='info'>
+                            <h3>Total Sales</h3>
+                            <h1>$12,560</h1>
+                        </div>
+                        <div className='progress'>
+                            <svg>
+                                <circle></circle>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </main>
 
     </div> 
   );
