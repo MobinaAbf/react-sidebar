@@ -1,4 +1,4 @@
-import './Dashboard.css';
+import './Sidebar.css';
 import myImage from './maze-logo_1_-removebg-preview.png'; 
 import {FaTimes} from "react-icons/fa";
 import {MdDashboard ,MdOutlineReceiptLong,MdPlaylistAddCheck,MdReport,MdLogout} from 'react-icons/md';
@@ -93,25 +93,7 @@ const Dashboard = () => {
 
                      {/* sidebar */}
 
-         <main>
-            <h1>Analytics</h1>
-            <div className='analyse'>
-                <div className='sales'>
-                    <div className='status'>
-                        <div className='info'>
-                            <h3>Total Sales</h3>
-                            <h1>$12,560</h1>
-                        </div>
-                        <div className='progress'>
-                            <svg>
-                                <circle></circle>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-         </main>
-
+         
     </div> 
   );
 }
